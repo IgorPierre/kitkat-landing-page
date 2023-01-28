@@ -19,14 +19,14 @@ header {
 }
 
 .navigator > a {
-  color: #F2F2F2;
+  color: #EBEEF2;
   text-decoration: none;
   font-weight: 700;
   transition: 0.4s;
 }
 
 .navigator > a:hover {
-  box-shadow: 0 2px 0 #FFF;
+  box-shadow: 0 2px 0 #EBEEF2;
 }
 
 .container {
@@ -75,12 +75,12 @@ header {
 }
 
 .details-area > button {
-  background-color: #F2F2F2;
+  background-color: #EBEEF2;
   color: #D9CDA9;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  border: 2px solid #F2F2F2;
+  border: 2px solid #EBEEF2;
   padding: 0.5rem 3rem;
   margin: 1rem 0;
   transition: 0.5s;
@@ -90,7 +90,7 @@ header {
 .details-area > button:hover,
 .details-area > button:focus {
   box-shadow: inset 200px 0 #D9CDA9;
-  color: #F2F2F2;
+  color: #EBEEF2;
 }
 
 @-webkit-keyframes mousein {
