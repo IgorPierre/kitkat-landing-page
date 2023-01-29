@@ -25,18 +25,18 @@ header {
     justify-content: space-evenly;
 
     width: 20%;
-}
 
-.navigator > a {
-    color: $white;
-    text-decoration: none;
-    
-    font-weight: 700;
-    transition: .4s;
-}
+    a {
+        color: $white;
+        text-decoration: none;
+        
+        font-weight: 700;
+        transition: .4s;
 
-.navigator > a:hover {
-    box-shadow: 0 2px 0 $white;
+        &:hover {
+            box-shadow: 0 2px 0 $white;
+        }
+    }
 }
 
 .container {
@@ -56,10 +56,6 @@ header {
     font-size: 4rem;
 }
 
-.container > p {
-    color: #FF2839;
-}
-
 .product-image {
     background: transparent;
     width: 60%;
@@ -67,11 +63,11 @@ header {
     transition: .4s;
     margin-right: 4rem;
     animation-name: slidein;
-}
 
-.product-image:hover {
-    animation-duration: 3s;
-    animation-name: mousein;
+    &:hover {
+        animation-duration: 3s;
+        animation-name: mousein;
+    }
 }
 
 .details-area {
@@ -82,28 +78,55 @@ header {
 
     width: 50%;
     height: 20vh;
+
+    button {
+        background-color: $white;
+        color: #D9CDA9;
+    
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+    
+        border: 2px solid $white;
+        padding: .5rem 3rem;
+        margin: 1rem 0;
+    
+        transition: .5s;
+        cursor: pointer;
+
+        &:hover,
+        &:focus{
+            box-shadow: inset 200px 0 #D9CDA9;
+            color: $white;
+        }
+    } 
 }
 
-.details-area > button {
-    background-color: $white;
-    color: #D9CDA9;
+.background-image {
+    width: 2.5rem;
+    position: absolute;
+    top: 80%;
+    left: 2rem;
+    transition: 1s;
+    animation: slidein 20s linear infinite;
+}
 
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
+.background-image.top {
+    width: 3.5rem;
+    top: 10%;
+    left: 90%;
+}
 
-    border: 2px solid $white;
-    padding: .5rem 3rem;
-    margin: 1rem 0;
+footer {
+    background-color: $light-brown;
 
-    transition: .5s;
-    cursor: pointer;
-} 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.details-area > button:hover,
- .details-area > button:focus{
-    box-shadow: inset 200px 0 #D9CDA9;
-    color: $white;
+    width: 100%;
+    height: 10vh;
 }
 
 @keyframes mousein {
@@ -126,33 +149,6 @@ header {
         transform: translate(0px, 0px);
         rotate: 0deg;
     }
-}
-
-footer {
-    background-color: $light-brown;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 10vh;
-}
-
-.background-image {
-    width: 2.5rem;
-    position: absolute;
-    top: 80%;
-    left: 2rem;
-    transition: 1s;
-    animation: slidein 20s linear infinite;
-}
-
-.background-image.top {
-    width: 3.5rem;
-    top: 10%;
-    left: 90%;
 }
 
 @keyframes slidein {
